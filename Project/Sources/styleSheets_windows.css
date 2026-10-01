@@ -1,0 +1,36 @@
+.default {
+	height: 23px;
+	font-family: Segoe UI;
+	font-size: 12px;
+}
+
+.default1 {
+	font-family: Segoe UI;
+	font-size: 12px;
+}
+
+.HDI {
+	font-family: Segoe UI;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+@media (form-theme: fluent-ui) {
+	.default {
+		height: 23px;
+	}
+
+	button.default {
+		height: 23px;
+	}
+}
+
+@media (form-theme: win-classic) {
+	.default {
+		height: 23px;
+	}
+
+	button.default {
+		height: 23px;
+	}
+}

@@ -1,0 +1,6 @@
+If (Form:C1466.trace)
+	TRACE:C157
+End if 
+
+SET DATABASE PARAMETER:C642(User param value:K37:94; "")
+RESTART 4D:C1292

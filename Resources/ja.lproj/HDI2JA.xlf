@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI2" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="HDI2_BtnRelaunch" resname="HDI2_BtnRelaunch">
+				<source>Relaunch database</source>
+				<target>データベースを再起動</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnHDI" resname="HDI2_BtnHDI">
+				<source>Back to the HDI</source>
+				<target>HDI に戻る</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Trace" resname="HDI2_Trace">
+				<source>Trace code</source>
+				<target>コードをトレース</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

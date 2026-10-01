@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messages" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI_Title" resname="HDI_Title">
+				<source>test my own databases more easily and efficiently?</source>
+				<target>test my own databases more easily and efficiently?</target>
+			</trans-unit>
+			<trans-unit id="HDI_Info" resname="HDI_Info">
+				<source>Test &amp; Quality Feature</source>
+				<target>Test &amp; Quality Feature</target>
+			</trans-unit>
+			<trans-unit id="BtnClose" resname="BtnClose">
+				<source>Close</source>
+				<target>Close</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</source>
+				<target>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
+				<source>You must have a valid 4D View Pro license to continue.</source>
+				<target>You must have a valid 4D View Pro license to continue.</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</source>
+				<target>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
+				<source>You must have a valid 4D Write Pro license to continue.</source>
+				<target>You must have a valid 4D Write Pro license to continue.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Relaunched" resname="HDI2_Relaunched">
+				<source>This database has been relaunched!</source>
+				<target>This database has been relaunched!</target>
+			</trans-unit>
+			<trans-unit id="HDI2_On" resname="HDI2_On">
+				<source>On: </source>
+				<target>On: </target>
+			</trans-unit>
+			<trans-unit id="HDI2_At" resname="HDI2_At">
+				<source>At: </source>
+				<target>At: </target>
+			</trans-unit>
+			<trans-unit id="HDI2_RelaunchNumber" resname="HDI2_RelaunchNumber">
+				<source>Relaunch number: </source>
+				<target>Relaunch number: </target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

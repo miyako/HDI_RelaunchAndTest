@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="DOC" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="DOC_OrderHeader" resname="DOC_OrderHeader">
+				<source>Order</source>
+				<target>Order</target>
+			</trans-unit>
+			<trans-unit id="DOC_Title" resname="DOC_Title">
+				<source>Title :</source>
+				<target>Title :</target>
+			</trans-unit>
+			<trans-unit id="DOC_Order" resname="DOC_Order">
+				<source>Order:</source>
+				<target>Order:</target>
+			</trans-unit>
+			<trans-unit id="DOC_TitleSpaced" resname="DOC_TitleSpaced">
+				<source>Title : </source>
+				<target>Title : </target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
