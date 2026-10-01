@@ -9,6 +9,17 @@ ARRAY LONGINT($windows; 0)
 
 If (Count parameters:C259=0)
 	
+	var $dataClass; $project; $path : Text
+	For each ($dataClass; ds)
+		If (ds[$dataClass].getCount()=0)
+			$path:=File("/RESOURCES/"+$dataClass+".4ie").platformPath
+			If (Test path name($path)=Is a document)
+				$project:=File("/RESOURCES/"+$dataClass+".4si").getText()
+				IMPORT DATA($path; $project)
+			End if 
+		End if 
+	End for each 
+	
 	WINDOW LIST($windows)
 	
 	For ($i; 1; Size of array($windows))
