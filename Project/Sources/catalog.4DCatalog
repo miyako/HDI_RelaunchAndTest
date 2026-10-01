@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_RelaunchAndTest" uuid="2D4F6103DC084198BFC0283C03D0A0B2" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="DOC" uuid="5FFB6E4662E84076BB60B2CCF062C87D" id="1">
+		<field name="ID" uuid="CF01C76D9B944C3282BEF752A9145C75" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Title" uuid="C1973FEF696F4CCFBB48F8C3B3108BAE" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Order" uuid="ECB3E95C3CB54CC1A29680C775690D9B" type="4" never_null="true" id="4"/>
+		<field name="Description" uuid="FC620251ACF64DFEA6FABEA19CD30460" type="10" never_null="true" id="6"/>
+		<primary_key field_name="ID" field_uuid="CF01C76D9B944C3282BEF752A9145C75"/>
+		<table_extra input_form="Input1" output_form="Output"/>
+	</table>
+	<table name="(Table_1)" uuid="15196BC6EA934A32BAFE63F5AC52F2E8" id="2" hide_in_REST="true">
+		<field name="ID" uuid="A9E449D8C1BA49FFB280A7592D21CC7C" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="E1DFB93E7CEA451980A550EB7BBCE8E1" type="4" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="A9E449D8C1BA49FFB280A7592D21CC7C"/>
+		<table_extra trashed="true" input_form="" output_form=""/>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="3897319633444454B55FD1AC9A3AB25B" type="7">
+		<field_ref uuid="A9E449D8C1BA49FFB280A7592D21CC7C" name="ID">
+			<table_ref uuid="15196BC6EA934A32BAFE63F5AC52F2E8" name="(Table_1)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="D3C3B140466F4104BE1ED1A87047F33E" type="7">
+		<field_ref uuid="CF01C76D9B944C3282BEF752A9145C75" name="ID">
+			<table_ref uuid="5FFB6E4662E84076BB60B2CCF062C87D" name="DOC"/>
+		</field_ref>
+	</index>
+	<base_extra package_name="HDI_RelaunchAndTest" structure_file_name="HowDoI" data_file_path=":HowDoI.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>
