@@ -1,5 +1,5 @@
-C_OBJECT:C1216($userObject)
-C_TEXT:C284($userParam)
+var $userObject : Object
+var $userParam : Text
 
 If (Form:C1466.trace)
 	TRACE:C157

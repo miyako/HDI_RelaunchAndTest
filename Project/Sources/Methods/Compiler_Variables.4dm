@@ -1,17 +1,17 @@
 //%attributes = {"invisible":true}
-C_REAL:C285(Demo)
-C_TEXT:C284(Var1)
-C_TEXT:C284(Var2)
-C_TEXT:C284(Var3)
-C_TEXT:C284(Var4)
-C_TEXT:C284(Var5)
-C_PICTURE:C286(vPicture)
-C_TEXT:C284(vRecNum)
-C_OBJECT:C1216(WParea)
-C_LONGINT:C283(wr)
-C_BOOLEAN:C305(bTrace)
-C_LONGINT:C283(r1)
-C_LONGINT:C283(r2)
-C_LONGINT:C283(r3)
-C_OBJECT:C1216(WParea1)
-C_OBJECT:C1216(WParea2)
+var Demo : Real
+var Var1 : Text
+var Var2 : Text
+var Var3 : Text
+var Var4 : Text
+var Var5 : Text
+var vPicture : Picture
+var vRecNum : Text
+var WParea : Object
+var wr : Integer
+var bTrace : Boolean
+var r1 : Integer
+var r2 : Integer
+var r3 : Integer
+var WParea1 : Object
+var WParea2 : Object

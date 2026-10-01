@@ -58,7 +58,8 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Order"
+					"text": ":xliff:DOC_OrderHeader",
+					"class": "hdi-header"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -67,7 +68,8 @@
 					"width": 280,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Title : "
+					"text": ":xliff:DOC_TitleSpaced",
+					"class": "hdi-header"
 				},
 				"Rectangle6": {
 					"type": "rectangle",
@@ -76,7 +78,8 @@
 					"width": 960,
 					"height": 25,
 					"sizingX": "grow",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"fill": "automatic"
 				},
 				"S1_Field": {
 					"type": "input",
@@ -114,7 +117,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[DOC:1]Title:3",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -136,7 +139,7 @@
 					"top": -5,
 					"left": 0,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "hdi-line"
 				},
 				"Line8": {
 					"type": "line",
@@ -144,14 +147,14 @@
 					"left": 960,
 					"height": 49,
 					"sizingX": "move",
-					"stroke": "#A8A8A8"
+					"class": "hdi-line"
 				},
 				"Line9": {
 					"type": "line",
 					"top": -5,
 					"left": 688,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "hdi-line"
 				},
 				"Splitter2": {
 					"type": "splitter",
@@ -170,7 +173,7 @@
 					"top": -5,
 					"left": 416,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "hdi-line"
 				},
 				"Splitter3": {
 					"type": "splitter",
@@ -189,7 +192,7 @@
 					"top": -5,
 					"left": 104,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "hdi-line"
 				},
 				"Splitter4": {
 					"type": "splitter",

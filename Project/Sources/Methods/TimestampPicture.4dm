@@ -1,15 +1,10 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 
-C_PICTURE:C286($0)
-C_LONGINT:C283($1)
+#DECLARE($option : Integer)->$picture : Picture
 
-C_TEXT:C284($timestamp)
-C_LONGINT:C283($p; $rotate)
-C_LONGINT:C283($option)
-C_TEXT:C284($svg; $rect; $svgText; $color)
-C_PICTURE:C286($picture)
-
-$option:=$1
+var $timestamp : Text
+var $p; $rotate : Integer
+var $svg; $rect; $svgText; $color : Text
 
 $timestamp:=Timestamp:C1445
 $p:=Position:C15("T"; $timestamp)
@@ -53,6 +48,3 @@ End if
 $picture:=SVG_Export_to_picture($svg)
 
 CONVERT PICTURE:C1002($picture; ".png")
-
-$0:=$picture
-

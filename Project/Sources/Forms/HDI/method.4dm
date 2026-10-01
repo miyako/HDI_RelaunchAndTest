@@ -1,7 +1,4 @@
-C_TEXT:C284($version; $maintext; $subtext)
-C_TEXT:C284($r)
-C_TEXT:C284($format)
-C_LONGINT:C283($width; $height; $shift)
+var $version; $maintext; $subtext; $r; $format : Text
 
 Case of 
 		
@@ -9,11 +6,9 @@ Case of
 		
 		Form:C1466.quit:=False:C215
 		
-		
 		If (Form:C1466.info=Null:C1517)
 			OBJECT SET VISIBLE:C603(*; "labelInfo"; False:C215)
 			OBJECT SET VISIBLE:C603(*; "txtInfo"; False:C215)
-			
 		End if 
 		
 		If (Form:C1466.blog=Null:C1517)
@@ -26,7 +21,6 @@ Case of
 		Else 
 			OBJECT SET TITLE:C194(*; "txtTitle"; Form:C1466.title)
 		End if 
-		
 		
 		If (Form:C1466.minimumVersion=Null:C1517)
 			OBJECT SET VISIBLE:C603(*; "labelVersion"; False:C215)
@@ -48,16 +42,16 @@ Case of
 				End if 
 			End if 
 			
-			$maintext:=OBJECT Get title:C1068(*; "TxtVersion")
+			$maintext:=Localized string("HDI_VersionAndAbove")
 			$maintext:=Replace string:C233($maintext; "{version}"; $version)
 			OBJECT SET TITLE:C194(*; "TxtVersion"; $maintext)
 			
 			If (Application version:C493<Form:C1466.minimumVersion)
 				
 				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; "Quit 4D")
+				OBJECT SET TITLE:C194(*; "BtnDemo"; Localized string("BtnClose"))
 				
-				$maintext:=OBJECT Get title:C1068(*; "ErrorMainText")
+				$maintext:=Localized string("HDI_ErrorOldVersionMain")
 				$maintext:=Replace string:C233($maintext; "{version}"; $version)
 				OBJECT SET TITLE:C194(*; "ErrorMainText"; $maintext)
 				
@@ -68,23 +62,22 @@ Case of
 			End if 
 		End if 
 		
-		
 		If (Form:C1466.license#Null:C1517) & (Form:C1466.quit=False:C215)
 			
 			If (Not:C34(Is license available:C714(Form:C1466.license)))
 				
 				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; "Quit 4D")
+				OBJECT SET TITLE:C194(*; "BtnDemo"; Localized string("BtnClose"))
 				
 				Case of 
 						
 					: (Form:C1466.license=4D View license:K44:4)
-						$maintext:="Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature."
-						$subtext:="You must have a valid 4D View Pro license to continue."
+						$maintext:=Localized string("ErrorViewProMain")
+						$subtext:=Localized string("ErrorViewProSub")
 						
 					: (Form:C1466.license=4D Write license:K44:2)
-						$maintext:="Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature."
-						$subtext:="You must have a valid 4D Write Pro license to continue."
+						$maintext:=Localized string("ErrorWriteProMain")
+						$subtext:=Localized string("ErrorWriteProSub")
 						
 				End case 
 				

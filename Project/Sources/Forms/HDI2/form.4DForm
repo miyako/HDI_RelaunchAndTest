@@ -30,15 +30,15 @@
 					"top": 560,
 					"left": 560,
 					"width": 220,
-					"height": 20,
 					"sizingX": "move",
-					"text": "Relaunch database",
+					"text": ":xliff:HDI2_BtnRelaunch",
 					"focusable": false,
 					"defaultButton": true,
 					"method": "ObjectMethods/btnRelaunch.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"infos": {
 					"type": "input",
@@ -47,7 +47,6 @@
 					"width": 720,
 					"height": 490,
 					"dataSource": "Form:C1466.infos",
-					"stroke": "#0000CD",
 					"fontFamily": "Courier Bold",
 					"fontSize": 18,
 					"focusable": false,
@@ -59,21 +58,22 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"class": "hdi-infos"
 				},
 				"btnHDI": {
 					"type": "button",
 					"top": 560,
 					"left": 320,
 					"width": 220,
-					"height": 20,
 					"sizingX": "move",
-					"text": "Back to the HDI",
+					"text": ":xliff:HDI2_BtnHDI",
 					"focusable": false,
 					"method": "ObjectMethods/btnHDI.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"bTrace": {
 					"type": "checkbox",
@@ -84,7 +84,7 @@
 					"sizingX": "move",
 					"sizingY": "move",
 					"dataSource": "Form:C1466.trace",
-					"text": "Trace code",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"

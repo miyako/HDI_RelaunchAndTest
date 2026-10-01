@@ -1,6 +1,6 @@
-C_REAL:C285($result)
-C_TEXT:C284($userParam)
-C_OBJECT:C1216($userObject)
+var $result : Real
+var $userParam : Text
+var $userObject : Object
 
 Case of 
 		
@@ -30,10 +30,10 @@ Case of
 			Form:C1466.count:=$userObject.count
 			
 			Form:C1466.infos:=""
-			Form:C1466.infos:=Form:C1466.infos+"This database has been relaunched!"+Char:C90(Carriage return:K15:38)
-			Form:C1466.infos:=Form:C1466.infos+"On: "+String:C10(Form:C1466.date; System date short:K1:1)+Char:C90(Carriage return:K15:38)
-			Form:C1466.infos:=Form:C1466.infos+"At: "+Time string:C180(Form:C1466.time)+Char:C90(Carriage return:K15:38)
-			Form:C1466.infos:=Form:C1466.infos+"Relanch number: "+String:C10(Form:C1466.count)
+			Form:C1466.infos:=Form:C1466.infos+Localized string("HDI2_Relaunched")+Char:C90(Carriage return:K15:38)
+			Form:C1466.infos:=Form:C1466.infos+Localized string("HDI2_On")+String:C10(Form:C1466.date; System date short:K1:1)+Char:C90(Carriage return:K15:38)
+			Form:C1466.infos:=Form:C1466.infos+Localized string("HDI2_At")+Time string:C180(Form:C1466.time)+Char:C90(Carriage return:K15:38)
+			Form:C1466.infos:=Form:C1466.infos+Localized string("HDI2_RelaunchNumber")+String:C10(Form:C1466.count)
 			
 			OBJECT SET VISIBLE:C603(*; "btnHDI"; True:C214)
 			
